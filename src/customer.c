@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniel Lopes. All rights reserved.
 //
 
-#include "lib/customer.h"
+#include "../lib/customer.h"
 #include <math.h>
 
 Customer new_customer (int user_id, char* full_name, time_t date_birth, int cc_number, char* address, int phone) {

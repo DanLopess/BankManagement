@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniel Lopes. All rights reserved.
 //
 
-#include "account.h"
+#include "../lib/account.h"
 #include <math.h>
 
 #define MAX_TRANSACT 50

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniel Lopes. All rights reserved.
 //
 
-#include "transaction.h"
+#include "../lib/transaction.h"
 
 Transaction new_transaction (int account_id, int transaction_id, int type, float amount) {
     

@@ -9,6 +9,11 @@
 #ifndef bank_management_h
 #define bank_management_h
 
+#include "account.h"
+#include "bank.h"
+#include "customer.h"
+#include "transaction.h"
+
 void menu();
 void new_acc();
 void view_list();

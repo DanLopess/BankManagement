@@ -11,13 +11,14 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "account.h"
+#include "customer.h" /* Customer already includes account */
 
 typedef struct Bank_ {
     char* bank_name;
-    Account accounts;
+    Account *accounts;
+    Customer * customers;
 } *Bank ;
 
-Bank new_bank(char* bank_name, Account accounts);
+Bank new_bank(char* bank_name, Account *accounts, Customer *customers);
 
 #endif /* bank_h */

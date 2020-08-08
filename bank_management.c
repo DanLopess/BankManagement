@@ -8,14 +8,12 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "bank.c"
-#include "src/account.c"
-#include "bank_management.h"
+#include "lib/bank_management.h"
 
 #define FILENAME "data/data.txt"
 
 void menu() {
-    printf("");
+    printf("BANK MENU");
 }
 
 void load_data() {
@@ -29,7 +27,6 @@ int main(int argc, char** argv) {
     
     // Prints front end
     menu();
-    
-    
+
     return 0;
 }
