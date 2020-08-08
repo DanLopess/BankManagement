@@ -9,13 +9,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "bank.c"
-#include "account.c"
-#define MAIN_FILE
-#include "lib/share.h"
+#include "src/account.c"
+#include "bank_management.h"
 
 #define FILENAME "data/data.txt"
 
-void print_menu() {
+void menu() {
     printf("");
 }
 
@@ -29,7 +28,7 @@ int main(int argc, char** argv) {
     char option;
     
     // Prints front end
-    print_menu();
+    menu();
     
     // Awaits input
     while();
