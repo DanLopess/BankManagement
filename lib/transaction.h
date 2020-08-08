@@ -26,7 +26,7 @@ typedef struct Transaction_ {
  * 1 - Deposit
  * 2 - Withdraw
  */
-Transaction * new_transaction (int account_id, int transaction_id, int type, float amount);
+Transaction new_transaction (int account_id, int transaction_id, int type, float amount);
 
 int check_transaction_input(int account_id, int transaction_id, int type, float amount);
 

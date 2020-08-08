@@ -10,7 +10,13 @@
 #define bank_management_h
 
 void menu();
-void read_data_from_file(char* filename);
-
+void new_acc();
+void view_list();
+void edit();
+void transact();
+void delete_customer();
+void see();
+void load_data();
+void save_data();
 
 #endif /* bank_management_h */

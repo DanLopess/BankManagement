@@ -30,3 +30,4 @@ int check_customer_input(int user_id, char* full_name, time_t date_birth, int cc
         return 0;
     }
 }
+

@@ -34,7 +34,7 @@ typedef struct Account_ {
 * 4 - Fixed for 2 years
 * 5 - Fixed for 3 years
 */
-Account new_acc (int user_id, int account_number, int account_type, float amount, float interest);
+Account new_account (int user_id, int account_number, int account_type, float amount, float interest);
 
 int check_account_input(int user_id, int account_number, int account_type, float amount, float interest);
 

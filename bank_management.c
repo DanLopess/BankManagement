@@ -18,7 +18,7 @@ void menu() {
     printf("");
 }
 
-void read_data_from_file(char* filename) {
+void load_data() {
     
 }
 
@@ -30,8 +30,6 @@ int main(int argc, char** argv) {
     // Prints front end
     menu();
     
-    // Awaits input
-    while();
     
     return 0;
 }

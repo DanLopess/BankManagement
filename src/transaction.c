@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniel Lopes. All rights reserved.
 //
 
-#include "lib/transaction.h"
+#include "transaction.h"
 
 Transaction new_transaction (int account_id, int transaction_id, int type, float amount) {
     
@@ -18,7 +18,7 @@ Transaction new_transaction (int account_id, int transaction_id, int type, float
               t->transaction_id = transaction_id;
               t->type = type;
               t->amount = amount;
-              t->open_date = time(0);
+              t->timestamp = time(0);
           } else {
               return NULL; // not using perror because we want the program to continue
           }
@@ -27,7 +27,7 @@ Transaction new_transaction (int account_id, int transaction_id, int type, float
     }
 
 int check_transaction_input(int account_id, int transaction_id, int type, float amount) {
-    if (account_id > 0 && transaction_id > 0 && amount >= 0.0 && interest >= 0.0 && (type == 0 || type == 1)) {
+    if (account_id > 0 && transaction_id > 0 && amount >= 0.0  && (type == 0 || type == 1)) {
         return 1;
     } else {
         return 0;
