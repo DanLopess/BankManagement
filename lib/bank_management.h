@@ -14,6 +14,7 @@
 #include "customer.h"
 #include "transaction.h"
 
+void centerText(char *text, int fieldWidth);
 void menu();
 void new_acc();
 void view_list();
@@ -23,5 +24,6 @@ void delete_customer();
 void see();
 void load_data();
 void save_data();
+void cleanup();
 
 #endif /* bank_management_h */
