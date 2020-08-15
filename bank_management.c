@@ -11,15 +11,24 @@
 #include <string.h>
 #include "lib/bank_management.h"
 
-#define FILENAME "data/data.txt"
+#define BANK_DATA "data/bank_data.txt"
+#define ACCOUNTS "data/accounts.txt"
+#define CUSTOMERS "data/customers.txt"
+#define TRANSACTIONS "data/transactions.txt"
 
 Bank bank;
 
+/*
+* Simple auxiliar function used to center text while printing 
+*/
 void centerText(char *text, int fieldWidth) {
     int padlen = (fieldWidth - strlen(text)) / 2;
     printf("%*s%s%*s\n", padlen, "", text, padlen, "");
 } 
 
+/*
+* Function that prints out the menu for this application 
+*/
 void menu() {
     if (bank != NULL && bank->bank_name != NULL) {
         centerText("#######################################################\n", 65);
@@ -40,10 +49,66 @@ void menu() {
     }
 }
 
-void load_data() {
-    
+/*
+* Creates a new customer account, if customer non-existant creates new one 
+*/
+void new_acc() {
+
 }
 
+/*
+* View customer information 
+*/
+void view_list(){
+
+}
+
+/*
+* Change address or phone number of a customer 
+*/
+void edit(){
+
+}
+
+/*
+* Transactions functionality - Can list all transactions of an account
+* or make a new deposit/withdrawal 
+*/
+void transact(){
+
+}
+
+/*
+* Function for deleting a customer and its accounts 
+*/
+void delete_customer(){
+
+}
+
+/*
+* Function for printing information of a given account  
+*/
+void see(){
+
+}
+
+/*
+* Loads all banking data from the text files
+*/
+void load_data(){
+
+}
+
+/*
+* Saves all banking data to the right text files 
+*/
+void save_data(){
+
+}
+
+/*
+* Function for cleaning the program up and freeing all used memory 
+*/
 void cleanup() {
     /*Loops through bank...*/
     free(bank);
@@ -54,12 +119,15 @@ int main(int argc, char** argv) {
     char* line;
     char option;
     
-    // Read data and fill bank
+    
     if((bank = malloc(sizeof(bank))) != NULL) {
+        // Read data and fill bank
         bank->bank_name = "Santander Totta";
 
         // Prints front end
         menu();
+
+        // Loop for choosing menu options
 
         exit(-1);
     } else {

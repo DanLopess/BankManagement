@@ -21,7 +21,6 @@ typedef struct Customer_ {
     char* address;
     int phone;
     Account* accounts; /* Contains all accounts related to this customer */
-    
 } *Customer;
 
 Customer new_customer(int user_id, char* full_name, time_t date_birth, int cc_number, char* address, int phone);

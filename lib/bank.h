@@ -17,8 +17,15 @@ typedef struct Bank_ {
     char* bank_name;
     Account *accounts;
     Customer * customers;
+    int number_accounts;
+    int number_customers;
 } *Bank ;
 
-Bank new_bank(char* bank_name, Account *accounts, Customer *customers);
+Bank new_bank(char* bank_name, Account *accounts, Customer *customers, int number_accounts, int number_customers);
+
+void add_account();
+void remove_account();
+void add_customer();
+void remove_customer();
 
 #endif /* bank_h */
