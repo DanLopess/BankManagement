@@ -22,6 +22,7 @@ void edit();
 void transact();
 void delete_customer();
 void see();
+void end_option();
 void load_data();
 void save_data();
 void cleanup();
