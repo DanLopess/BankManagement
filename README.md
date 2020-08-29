@@ -9,7 +9,7 @@ Run these commands on terminal:
 and
 `make`
 and then
-`./BankManagement``
+`./BankManagement`
 
 ### MENU
 
