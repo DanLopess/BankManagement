@@ -16,6 +16,6 @@ jobs:
     - name: make
       run: make
     - name: BankManagement
-      run: ./BankManagement
+      run: ./bank_management
     - name: make clean
       run: make clean
