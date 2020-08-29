@@ -4,10 +4,10 @@ Small Program written in C containing a bank management service
 
 <p align="center">
   <a href="https://github.com/DanLopess/BankManagement/actions">
-    <img src="https://img.shields.io/github/workflow/status/socialsoftware/quizzes-tutor/build" alt="Build">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/DanLopess/BankManagement/master">
   </a>
   <a href="https://github.com/DanLopess/BankManagement/blob/master/LICENSE">
-    ![Build](https://github.com/DanLopess/BankManagement/workflows/C/C++%20CI/badge.svg)
+    <img alt="GitHub" src="https://img.shields.io/github/license/DanLopess/BankManagement">
     </a>
 </p>
 
