@@ -1,16 +1,35 @@
-# Bank Management API
+# Bank Management
 
-Small Program written in C containing a bank management API service
+Small Program written in C containing a bank management service
 
-## How to connect to API
+## How to run
 
-- Still not decided but there are 2 options:
-    - RPC 
-    - Pipes 
-    - gSOAP
-    
-## What frontend to use (desktop app)?
+Run these commands on terminal:
+`make clean`
+and
+`make`
+and then
+`./BankManagement``
 
-The frontend will be either:
-- JavaFx
-- Python
+### MENU
+
+This app contains the following menu:
+
+    #######################################################
+
+                         Bank Name
+
+         * CUSTOMER ACCOUNT BANKING MANAGEMENT SYSTEM *
+
+    #######################################################
+
+    1. Create new account
+    2. Update information of existing account
+    3. Transactions Menu
+    4. Check the details of existing account
+    5. Remove existing account
+    6. View customer's list
+    7. Exit
+
+
+    Enter your choice:

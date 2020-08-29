@@ -162,6 +162,34 @@ void end_option()
 */
 void load_data()
 {
+    char *c;
+    FILE *fptr;
+
+    /* --- Read bank data --- */
+    if ((fptr = fopen(BANK_DATA, "r")) == NULL)
+    {
+        printf("Error! opening file");
+        // Program exits if file pointer returns NULL.
+        exit(1);
+    }
+
+    // reads text until newline is encountered (Bankname)
+    if ((c = malloc(1000 * sizeof(char))) != NULL)
+    {
+        fscanf(fptr, "%[^\n]", c);
+        bank->bank_name = c;
+    }
+    else
+    {
+        exit(EXIT_FAILURE);
+    }
+    fclose(fptr);
+
+    /* --- Read customer data --- */
+    /* --- Read transaction data --- */
+    /* --- Read account data --- */
+
+    return;
 }
 
 /*
@@ -188,7 +216,7 @@ int main(int argc, char **argv)
     if ((bank = malloc(sizeof(bank))) != NULL)
     {
         /* Read data and fill bank */
-        bank->bank_name = "Santander Totta";
+        load_data();
 
         menu(); /*Prints front end*/
 
