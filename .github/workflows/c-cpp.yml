@@ -16,9 +16,6 @@ jobs:
     - name: make
       run: make
     - name: BankManagement
-      run:  FILE=bank_management
-            if test -f "$FILE"; then
-            echo "$FILE exists."
-            fi
+      run:  FILE=bank_management && test -f $FILE && echo "$FILE exists."
     - name: make clean
       run: make clean
