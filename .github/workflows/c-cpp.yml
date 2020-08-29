@@ -13,13 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: BankManagement
-      run: ./BankManagement
     - name: make
       run: make
     - name: make check
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: BankManagement
+      run: ./BankManagement
     - name: make clean
       run: make clean
