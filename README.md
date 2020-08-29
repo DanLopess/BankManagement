@@ -11,7 +11,7 @@ Small Program written in C containing a bank management service
     </a>
 </p>
 
-![C/C++ CI](https://github.com/DanLopess/BankManagement/workflows/C/C++%20CI/badge.svg)
+<p align="center">![C/C++ CI](https://github.com/DanLopess/BankManagement/workflows/C/C++%20CI/badge.svg)</p>
 
 ## How to run
 
