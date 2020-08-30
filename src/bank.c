@@ -8,9 +8,11 @@
 
 #include "../lib/bank.h"
 
-Bank new_bank(char* bank_name, Account *accounts, Customer *customers, int number_accounts, int number_customers) {
+Bank new_bank(char *bank_name, Account *accounts, Customer *customers, int number_accounts, int number_customers)
+{
   Bank b;
-  if((b = malloc(sizeof b)) != NULL) {
+  if ((b = malloc(sizeof b)) != NULL)
+  {
     b->bank_name = bank_name;
     b->accounts = accounts;
     b->customers = customers;
@@ -20,4 +22,15 @@ Bank new_bank(char* bank_name, Account *accounts, Customer *customers, int numbe
   return b;
 }
 
-
+void add_account(Account a)
+{
+}
+void remove_account(Account a)
+{
+}
+void add_customer(Customer c)
+{
+}
+void remove_customer(Customer c)
+{
+}

@@ -23,9 +23,9 @@ typedef struct Bank_ {
 
 Bank new_bank(char* bank_name, Account *accounts, Customer *customers, int number_accounts, int number_customers);
 
-void add_account();
-void remove_account();
-void add_customer();
-void remove_customer();
+void add_account(Account a);
+void remove_account(Account a);
+void add_customer(Customer c);
+void remove_customer(Customer c);
 
 #endif /* bank_h */

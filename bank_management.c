@@ -60,13 +60,38 @@ void menu()
 */
 void new_acc()
 {
+    int id;
+    float amount;
+    float interest;
+    char *account_type = malloc(sizeof(char) * 1000);
+    char *savings = "savings";
+
     system("clear"); /* First clears the screen */
 
-    /* Do something */
+    /* Asks for account data info*/
+    printf("============== NEW ACCOUNT ==============\n");
+    printf("Please provide the required information.\n");
+    printf("=========================================\n");
+    printf("1 - Customer id\nType here: ");
+    scanf("%d", &id);
+    printf("2 - Account Type\nType here: ");
+    scanf("%s", account_type);
+    printf("3 - Initial ammount\nType here: ");
+    scanf("%f", &amount);
+    for (int i = 0; account_type[i]; i++)
+    {
+        account_type[i] = tolower(account_type[i]);
+    }
+    if (!strcmp(account_type, savings))
+    {
+        printf("4 - Interest Rate\nType here: ");
+        scanf("%f", &interest);
+    }
 
-    printf("Let the Battle Begin!\n");
+    /* Create Account and add to bank */
 
     /* End function */
+    printf("Well done! Account created.\n");
     end_option();
 }
 

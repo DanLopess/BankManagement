@@ -42,3 +42,20 @@ This app contains the following menu:
 
 
     Enter your choice:
+
+### Versions
+
+#### Version 1
+
+- Single threaded application
+- Auto Saving hability disabled
+- Buffer overflow flaws (reading strings)
+- All functionality is available, for a user at a time
+
+#### Version 2 (Goals - next sprint)
+
+- Multi threaded application
+- Auto Saving hability enabled
+- All functionality is available for many users at a time
+- Synchronization problems and locks have been applied
+- Improved data saving mechanism
