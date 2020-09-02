@@ -28,10 +28,10 @@ typedef struct Account_ {
 
 /*
 * Account types:
-* 1 - Current
-* 2 - Saving
-* 3 - Fixed for 1 year
-* 4 - Fixed for 2 years
+* 1 - Normal
+* 2 - Savings
+* 3 - Investment
+* 4 - Fixed for 1 years
 * 5 - Fixed for 3 years
 */
 Account new_account (int user_id, int account_number, int account_type, float amount, float interest);

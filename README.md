@@ -45,14 +45,14 @@ This app contains the following menu:
 
 ### Versions
 
-#### Version 1
+#### Version 1.0
 
 - Single threaded application
 - Auto Saving hability disabled
 - Buffer overflow flaws (reading strings)
 - All functionality is available, for a user at a time
 
-#### Version 2 (Goals - next sprint)
+#### Version 2.0 (Goals - next sprint)
 
 - Multi threaded application
 - Auto Saving hability enabled

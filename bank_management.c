@@ -60,11 +60,9 @@ void menu()
 */
 void new_acc()
 {
-    int id;
+    int id, account_type;
     float amount;
     float interest;
-    char *account_type = malloc(sizeof(char) * 1000);
-    char *savings = "savings";
 
     system("clear"); /* First clears the screen */
 
@@ -74,21 +72,19 @@ void new_acc()
     printf("=========================================\n");
     printf("1 - Customer id\nType here: ");
     scanf("%d", &id);
-    printf("2 - Account Type\nType here: ");
-    scanf("%s", account_type);
+    printf("2 - Account Type (0 - normal, 1 - savings, 2 - investments, 3 - other)\nType here: ");
+    scanf("%d", &account_type);
     printf("3 - Initial ammount\nType here: ");
     scanf("%f", &amount);
-    for (int i = 0; account_type[i]; i++)
-    {
-        account_type[i] = tolower(account_type[i]);
-    }
-    if (!strcmp(account_type, savings))
+    if (account_type == 1)
     {
         printf("4 - Interest Rate\nType here: ");
         scanf("%f", &interest);
     }
 
     /* Create Account and add to bank */
+    int account_number = get_last_account_number(bank) + 1;
+    Account account = new_account(id, account_number, account_type, amount, interest);
 
     /* End function */
     printf("Well done! Account created.\n");

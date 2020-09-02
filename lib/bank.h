@@ -23,6 +23,7 @@ typedef struct Bank_ {
 
 Bank new_bank(char* bank_name, Account *accounts, Customer *customers, int number_accounts, int number_customers);
 
+int get_last_account_number(Bank bank);
 void add_account(Account a);
 void remove_account(Account a);
 void add_customer(Customer c);

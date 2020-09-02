@@ -22,6 +22,22 @@ Bank new_bank(char *bank_name, Account *accounts, Customer *customers, int numbe
   return b;
 }
 
+int get_last_account_number(Bank bank)
+{
+  Account *accounts = bank->accounts;
+  int higher_acc_number = accounts[0]->account_number;
+
+  for (int i = 0; i < accounts[i]; i++)
+  {
+    if (accounts[i]->account_number > higher_acc_number)
+    {
+      higher_acc_number = accounts[i]->account_number;
+    }
+  }
+
+  return higher_acc_number;
+}
+
 void add_account(Account a)
 {
 }
